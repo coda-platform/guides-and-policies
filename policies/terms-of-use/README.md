@@ -1,6 +1,6 @@
-# CODA Platform: Terms of Use
+# Terms of Use
 
-## Terms of Use
+## General Terms
 
 The following Terms of Use govern and apply to your access and use of our websites (CODA platform) (the “Site”) and our software (the “Software”), as well as the service provided through the Site and Software (the “Service”). By accessing or using our Site, Software or Service (collectively “CODA platform”), you signify your agreement to these Terms of Use. This is a contract (the “Agreement”) between you (the “User” or “you”), and CODA platform (the “Company” or “we”).
 
