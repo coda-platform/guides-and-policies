@@ -10,25 +10,34 @@
 - Disks: OS - 100 GB, data - 512 GB
 - Data: OS - 100 GB, data - 512 GB<sup>*</sup>
 
-**Site node recommended minimal specs"
+**Site node recommended minimal specs**
 
 - 8 cores and 16 GB RAM
 - GPU: RTX 2080 or better NVIDIA-compatible GPU
 - Disks: OS - 100 GB, data - 512 GB<sup>*</sup>
 
-> * It is recommended to dedicate a separate block device (virtual disk) for data. Simply because it is best practice and it ensures an easier and more homogenous deployment across sites.
+**Disk partitioning**
+
+
+It is recommended to dedicate a separate block device (virtual disk) for data, to ensure more homogenous deployments across sites. Execute `lsblk` on each virtual machine and check the output to get the list of blocks. If `lsblk^` utility is not found install it first by doing `yum install -y util-linux`.
 
 ## Networking requirements
 
-The hub node must be accessible from your site node by HTTPS protocol. To reach the hub, your site must permit outbound HTTPS
-(TCP/443) connections from the site nodes to the correct CIDR blocks:
+## Basic networking requirements
 
-- 132.203.231.8/29
-- 132.203.189.10/32
+The hub node must be accessible from your site node by HTTPS protocol. You can check whether this is the case using `wget https://google.com`. To reach the hub, your site must permit outbound HTTPS (TCP/443) connections from the site nodes to the correct CIDR blocks.
 
-> Some institutional proxies and firewalls may not manage this type of communication correctly with default settings. If the site cannot communicate with the hub and maintain a connection, check with your site networking team to permit this kind of communication.
+You will need to find the address of your **NTP servers** (to keep time in sync<sup>*</sup>) and **SMTP servers** (to enable automated system e-mail notifications). Both are optional, but recommended.
+
+> * Necessary to keep all servers time in sync and provides accuracy while doing distributed analysis. Using more than one source is a best practice. If none is provided, deployment scripts will configure default sources outside your organization, outbound NTP traffic must be permitted for this to work correctly.
+
+### Restricted network environments. 
+
+For deployment in restricted networking environments, you may need to obtain the address of your **proxy server**, if Internet access is not permitted.
 
 ## Proxy address whitelist 
+
+If you wish to manage proxy accesses with a strict whitelist, ensure the following ports are whitelisted:
 
 <table
 <tr><th>URL</th><th>Purpose</th></tr>
@@ -67,3 +76,13 @@ https://auth.docker.io
 <td>
 https://heartbeat.hub.coda19.com </td>
 <td>Sending heartbeat to control plane (hub)</td>
+</tr>
+</table>
+
+## Deployment methods
+
+### A. Sandbox environment with Caprover
+
+https://docs.google.com/document/d/1ab6548GrpJStVCa2X9lyzSRJLG71A09aw2KiJloyYcA/edit#
+
+### B. Production environment with Ansible
