@@ -5,7 +5,6 @@
 - **Description:** This file describes the general framework under which the various entities affiliated with the CODA project have accepted to collaborate.
 - **Primary author(s):** Michaël Chassé, Pascal St-Onge.
 - **Contributors:** 
-- **French version:** Please see [here](/governance-framework-fr.md).
 
 ### Resources
 
