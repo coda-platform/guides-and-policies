@@ -86,3 +86,32 @@ https://heartbeat.hub.coda19.com </td>
 https://docs.google.com/document/d/1ab6548GrpJStVCa2X9lyzSRJLG71A09aw2KiJloyYcA/edit#
 
 ### B. Production environment with Ansible
+
+[In progress]
+
+## Deployment steps
+
+### Obtain a domain name
+
+In order to deploy the CODA platform, you will need a registered domain name and access to DNS settings. Throughout this guide, we will use `coda-platform.com` as the example base domain.
+
+### Provision virtual machines
+
+The first step in deployment is to create the virtual machines (VMs) that will host the hub and site nodes. Throughout this guide, we will assume two VMs:
+
+- One VM for the hub compoennts (`hub`)
+- One VM for an example site node (`site1`)
+
+VMs should run a *NIX distribution (the platform is developed and tested on Ubuntu 18.04). 
+
+### Install CapRover on each VM
+
+Once the VMs are created, follow [instructions)(https://caprover.com/docs/get-started.html) to install CapRover on each machine. As an alternative, you can deploy a [VM with CapRover pre-installed](https://cloud.digitalocean.com/droplets/new?image=caprover-18-04&app=caprover&onboarding_origin=marketplace&appId=93379849&refcode=6410aa23d3f3) on DigitalOcean.
+
+### Verify access to CapRover is working
+
+Obtain the IP address for the `hub` and `site1` VMs. Point your browser to port `3000` of the machine to access the CapRover control panel, e.g. `https://XXX.XXX.XXX.XX:3000`. Use the default password `captain42` to login to the control panel. Ensure you can access the CapRover control panel on both machines.
+
+> If CapRover is still deploying, you may see the following sequence of error messages: "Firewall passed", "Captain is not ready yet", "502 error", followed by a successful login screen.
+
+### Setup domain names on CapRover
