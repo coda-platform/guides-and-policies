@@ -3,8 +3,7 @@
 ### Overview
  
 - **Description:** This file describes the general framework under which the various entities affiliated with the CODA project have accepted to collaborate.
-- **Primary author(s):** Michaël Chassé, Maxime Lavigne, Bruno Lavoie, Louis-Antoine Mullie
-- **Contributors:** 
+- **Primary author(s):** Michaël Chassé, Maxime Lavigne, Bruno Lavoie, Louis-Antoine Mullie.
 
 ### Introduction
 
