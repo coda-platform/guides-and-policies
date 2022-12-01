@@ -3,7 +3,7 @@
 ### Overview
  
 - **Description:** This file describes the general framework under which the various entities affiliated with the CODA project have accepted to collaborate.
-- **Primary author(s):** Pascal St-Onge, Martine Lebrasseur, Michaël Chassé
+- **Primary author(s):** Pascal St-Onge, Martine Lebrasseur, Michaël Chassé.
 - **Contributors:** members of the CODA Executive Committee.
 
 ### Resources
