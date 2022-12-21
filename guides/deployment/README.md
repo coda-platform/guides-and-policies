@@ -175,3 +175,38 @@ Finally, go to the CapRover control panel for the `site1` VM (`http://<site1 VM 
 <img src="https://i.postimg.cc/nhkZrxQD/caprover-domain2.png" alt="CapRover Site Domain Setup" width="500"/>
 
 Follow the same steps as for the hub: enable HTTPS, then force HTTPS.
+
+### Deploy hub services
+
+#### Install Node, NPM, and CapRover CLI on your local machine
+
+First, ensure you have NodeJS and NPM installed - if not, follow [these instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm). Verify your installation by opening your terminal and running:
+
+```
+node -v
+npm -v
+```
+
+Node version ≥ 16.13 and NPM version ≥ 8.19 are recommended. Next, run the following command to install the CapRover command-line utility tool on your local machine:
+
+```
+npm install -g caprover
+```
+
+#### Login to the hub using the CapRover CLI
+
+Run the following command:
+
+```
+caprover login
+```
+
+Enter the following information:
+
+- CapRover machine URL address: `https://captain.hub.your-domain-name.com"
+- CapRover machine password: `captain42`
+- CapRover machine name: `hub`
+
+The result should look as follows:
+
+<img src="https://i.postimg.cc/FRFfWv2b/caprover-cli-login.png" alt="CapRover CLI Login" width="500"/>
