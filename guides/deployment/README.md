@@ -106,12 +106,16 @@ VMs should run a *NIX distribution (the platform is developed and tested on Ubun
 
 ### Install CapRover on each VM
 
-Once the VMs are created, follow [instructions)(https://caprover.com/docs/get-started.html) to install CapRover on each machine. As an alternative, you can deploy a [VM with CapRover pre-installed](https://cloud.digitalocean.com/droplets/new?image=caprover-18-04&app=caprover&onboarding_origin=marketplace&appId=93379849&refcode=6410aa23d3f3) on DigitalOcean.
+Once the VMs are created, follow [instructions](https://caprover.com/docs/get-started.html) to install CapRover on each machine. As an alternative, you can deploy a [VM with CapRover pre-installed](https://cloud.digitalocean.com/droplets/new?image=caprover-18-04&app=caprover&onboarding_origin=marketplace&appId=93379849&refcode=6410aa23d3f3) on DigitalOcean.
+
+> Note: While it is possible to deploy CapRover without a domain name, the setup procedure is more complex. Please follow [these instructions](https://caprover.com/docs/run-locally.html).
 
 ### Verify access to CapRover is working
 
-Obtain the IP address for the `hub` and `site1` VMs. Point your browser to port `3000` of the machine to access the CapRover control panel, e.g. `https://XXX.XXX.XXX.XX:3000`. Use the default password `captain42` to login to the control panel. Ensure you can access the CapRover control panel on both machines.
+Obtain the IP address for the `hub` and `site1` VMs. Point your browser to port `3000` of the respective machines, in order to access the CapRover control panel, e.g. `https://XXX.XXX.XXX.XX:3000`. Use the default password `captain42` to login to the CapRover control panel. Ensure you can access the CapRover control panel on both machines. You should see the following screen:
 
-> If CapRover is still deploying, you may see the following sequence of error messages: "Firewall passed", "Captain is not ready yet", "502 error", followed by a successful login screen.
+<img src="https://i.postimg.cc/QNn6JycW/caprover-login.png" alt="CapRover Login" width="500"/>
+
+> If CapRover is still deploying, you may see the following sequence of error messages: "Firewall passed", "Captain is not ready yet", "502 error", followed by a successful login screen. You may need to refresh several times, as the setup process may take ~5 minutes.
 
 ### Setup domain names on CapRover
