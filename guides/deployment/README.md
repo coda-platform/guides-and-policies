@@ -265,3 +265,18 @@ npm install
 ```
 npm run deploy
 ```
+
+#### Configure authentication service
+
+1. Create a realm called `hub` configured as follows:
+
+<img src="https://i.postimg.cc/HWwLq4cL/auth-service-hub-config.png" alt="CapRover CLI Login" width="500"/>
+
+2. Create a client called `dashboard` configured as follows:
+
+<img src="https://i.postimg.cc/NFDB5Dm7/auth-service-client-config.png" alt="CapRover CLI Login" width="500"/>
+
+3. Create user called `test-user` in the `hub` realm as follows:
+
+<img src="https://i.postimg.cc/Y9js1x5z/auth-service-user-config-0.png" alt="CapRover CLI Login" width="500"/>
+<img src="https://i.postimg.cc/nrDSWhcs/auth-service-user-config-1.png" alt="CapRover CLI Login" width="500"/>
