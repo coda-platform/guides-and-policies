@@ -203,10 +203,29 @@ caprover login
 
 Enter the following information:
 
-- CapRover machine URL address: `https://captain.hub.your-domain-name.com"
+- CapRover machine URL address: `https://captain.hub.your-domain-name.com`
 - CapRover machine password: `captain42`
 - CapRover machine name: `hub`
 
 The result should look as follows:
 
 <img src="https://i.postimg.cc/FRFfWv2b/caprover-cli-login.png" alt="CapRover CLI Login" width="500"/>
+
+#### Clone and configure hub deployment scripts
+
+1. Run the following commands to clone the hub deployment scripts, and install dependencies:
+
+```
+git clone git@github.com:coda-platform/hub-deployer.git
+cd hub-deployer
+npm install
+```
+
+2. Locally edit the configuration files (`.env` and files in subfolder `env/`) to suit your needs. For a default "sandbox" (insecure) install, you can simply modify `.env` and leave all the other configuration files as is.
+
+3. Run the following command to setup and deploy the CapRover apps:
+
+
+```
+npm run deploy
+```
