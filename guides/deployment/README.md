@@ -176,7 +176,7 @@ Finally, go to the CapRover control panel for the `site1` VM (`http://<site1 VM 
 
 Follow the same steps as for the hub: enable HTTPS, then force HTTPS.
 
-### Deploy hub services
+### Deploy the orchestration hub
 
 #### Install Node, NPM, and CapRover CLI on your local machine
 
@@ -193,7 +193,7 @@ Node version ≥ 16.13 and NPM version ≥ 8.19 are recommended. Next, run the f
 npm install -g caprover
 ```
 
-#### Login to the hub using the CapRover CLI
+#### Login to hub VM using the CapRover CLI
 
 Run the following command:
 
@@ -225,6 +225,42 @@ npm install
 
 3. Run the following command to setup and deploy the CapRover apps:
 
+
+```
+npm run deploy
+```
+
+### Deploy a site node
+
+This will create a single hospital site. Creating additional sites follows the same procedure; new sites will automatically notify the hub of their presencer.
+
+#### Login to the site using the CapRover CLI
+
+Run the following command:
+
+```
+caprover login
+```
+
+Enter the following information:
+
+- CapRover machine URL address: `https://captain.site1.your-domain-name.com`
+- CapRover machine password: `captain42`
+- CapRover machine name: `site1`
+
+#### Clone and configure site deployment scripts
+
+1. Run the following commands to clone the site deployment scripts, and install dependencies:
+
+```
+git clone git@github.com:coda-platform/site-deployer.git
+cd site-deployer
+npm install
+```
+
+2. Locally edit the configuration files (`.env` and files in subfolder `env/`) to suit your needs. For a default "sandbox" (insecure) install, you can simply modify `.env` and leave all the other configuration files as is.
+
+3. Run the following command to setup and deploy the CapRover apps:
 
 ```
 npm run deploy
