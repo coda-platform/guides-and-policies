@@ -274,7 +274,7 @@ npm run deploy
 
 2. Create a client called `dashboard` configured as follows:
 
-<img src="https://i.postimg.cc/NFDB5Dm7/auth-service-client-config.png" alt="CapRover CLI Login" width="500"/>
+<img src="https://i.postimg.cc/44cTqJ0b/auth-service-client-config.png" alt="CapRover CLI Login" width="500"/>
 
 3. Create user called `test-user` in the `hub` realm as follows:
 
