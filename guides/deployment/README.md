@@ -2,22 +2,23 @@
 
 ## Provision machines
 
-### Recommended minimal specifications
+### Minimal specifications
 
-**Hub VM recommended minimal specs**
+The following specifications represent the "bare minimum" resources required to run the CODA platform in sandbox mode. 
 
-- 4 cores and 8GB RAM
+**Orchestration hub**
+
+- 8 cores/vCPUs and 16 GB RAM
 - Disks: OS - 100 GB, data - 512 GB
 - Data: OS - 100 GB, data - 512 GB<sup>*</sup>
 
-**Site node recommended minimal specs**
+**Site nodes**
 
-- 8 cores and 16 GB RAM
+- 8 cores/vCPUs and 16 GB RAM
 - GPU: RTX 2080 or better NVIDIA-compatible GPU
 - Disks: OS - 100 GB, data - 512 GB<sup>*</sup>
 
 **Disk partitioning**
-
 
 It is recommended to dedicate a separate block device (virtual disk) for data, to ensure more homogenous deployments across sites. Execute `lsblk` on each virtual machine and check the output to get the list of blocks. If `lsblk^` utility is not found install it first by doing `yum install -y util-linux`.
 
