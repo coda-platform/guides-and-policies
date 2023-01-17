@@ -110,9 +110,9 @@ De-identification of data will be under the ultimate responsibility of the site 
 
 ### Formal auditing
 
-Independent security audit: this document will be formally reviewed by an independent security consultant, and a security audit will be conducted once the network is in place and multicenter analyses are ready to be performed. Subsequent audits may be necessary after significant changes to the security framework, as deemed relevant by the data security committee.
+- **Independent security audit:** this document will be formally reviewed by an independent security consultant, and a security audit will be conducted once the network is in place and multicenter analyses are ready to be performed. Subsequent audits may be necessary after significant changes to the security framework, as deemed relevant by the data security committee.
 
-Duty to report: all members of the CODA project have a duty to report any security anomalies to the data security committee: for example, if a user was given an incorrect role, or if a site found multiple users were using the same credentials.
+- **Duty to report:** all members of the CODA project have a duty to report any security anomalies to the data security committee: for example, if a user was given an incorrect role, or if a site found multiple users were using the same credentials.
 Data security committee
 
-A data security committee will be created in order to coordinate and supervise the implementation of the data security framework described in this document. This committee will contain at least one independent consultant with formal expertise in information security. In addition, each site will nominate a privacy auditor, who will report to the data security committee.
+- **Data security committee:** A data security committee will be created in order to coordinate and supervise the implementation of the data security framework described in this document. This committee will contain at least one independent consultant with formal expertise in information security. In addition, each site will nominate a privacy auditor, who will report to the data security committee.
