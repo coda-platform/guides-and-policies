@@ -4,7 +4,7 @@ Deployment steps
 1. Obtain required accesses
  
 ●  	Request the following accesses (e-mail louis.mullie@gmail.com):
-○  	GitHub organization: https://github.com/CODA-19
+○  	GitHub organization: https://github.com/coda-platform
 ○  	DockerHub organization: https://hub.docker.com/repository/docker/coda19
 ○  	AirTable terminology server: https://airtable.com/tblVaHH9uS83GcjqB/viw8XsmYG3hlDsB8G
 ●  	Obtain remote desktop connection token for VALERIA
@@ -38,12 +38,12 @@ NOTE: It is important to dedicate a separate block device (virtual disk) for dat
 3. Set up RED VM
  
 ●  	Identify location of information in source systems corresponding to the following templates:
-https://github.com/CODA-19/fhir-templates
+https://github.com/coda-platform/fhir-templates
 
-●  	Obtain site-specific terminology dictionary via: https://github.com/CODA-19/terminology
+●  	Obtain site-specific terminology dictionary via: https://github.com/coda-platform/terminology-api
  
 ●  	Develop scripts to convert source system data to FHIR JSON, using terminology dictionary to insert appropriate codes:
-Example: https://github.com/CODA-19/csv-to-fhir
+Example: https://github.com/coda-platform/csv-to-fhir
 
 ●  	Develop scripts to extract image data in HDF5 format
  
@@ -117,7 +117,7 @@ Following this, the VALERIA team will let you know when to proceed to next steps
  
 On the orange and green virtual machines, deploy Ansible environment built by VALERIA, simply follow bootstrap instructions at:
  
-https://github.com/CODA-19/deploy-scripts
+https://github.com/coda-platform
  
 After a few minutes you’ll be asked to provide this information:
  

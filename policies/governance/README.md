@@ -9,4 +9,4 @@
 ### Resources
 
 - [French version](https://github.com/coda-platform/guides-and-policies/raw/main/policies/governance/GovernanceFramework-FR.pdf)
-- English version [in progress]
+- [English version](https://github.com/coda-platform/guides-and-policies/raw/main/policies/governance/GovernanceFramework-EN.docx)
