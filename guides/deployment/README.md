@@ -1,6 +1,10 @@
-# CODA Deployment Guide
+# Sandbox Environment
 
-The easiest way to deploy and test the CODA platform is to follow the illustrated [deployment tutorial](https://github.com/coda-platform/guides-and-policies/blob/main/guides/deployment/deployment-tutorial.pdf).
+The easiest way to deploy and test the CODA platform in sandbox mode is to follow the illustrated [deployment tutorial](https://github.com/coda-platform/guides-and-policies/blob/main/guides/deployment/deployment-tutorial.pdf).
+
+# Ansible Deployment
+
+For production environments, a more secure deployment using Ansible is recommended.
 
 ## Provision machines
 
