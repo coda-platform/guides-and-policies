@@ -94,7 +94,7 @@ https://docs.google.com/document/d/1ab6548GrpJStVCa2X9lyzSRJLG71A09aw2KiJloyYcA/
 
 ### B. Production environment with Ansible
 
-[In progress]
+[Production deployment guide](https://github.com/coda-platform/guides-and-policies/blob/main/guides/deployment/deployment_guide_production_ansible.pdf)
 
 ## Deployment steps
 
